@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cosmic"
+version = "0.1.0"
+description = ""
+authors = ["João Vitor Gutkoski Paes <joao.paes@dynamox.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.89.1"
+pydantic = {extras = ["dotenv"], version = "^1.10.4"}
+SQLAlchemy = "^1.4.46"
+psycopg2-binary = "^2.9.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+ipython = "^8.8.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
